@@ -1,0 +1,50 @@
+.parent{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.child{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+body{
+    background-color: black;
+    padding: 0 10px;
+}
+
+@media(max-width: 1112px){
+    .parent{
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    body{
+        background-color: white;
+    }
+
+    .child{
+        background-color: burlywood;
+    }
+}
+
+@media(max-width: 840px){
+    body{
+        background-color: yellow;
+    }
+    .child{
+        background-color: aqua;
+    }
+}
+
+@media(max-width: 648px){
+    body{
+        background-color: blueviolet;
+    }
+
+    .child{
+        background-color: crimson;
+    }
+}
